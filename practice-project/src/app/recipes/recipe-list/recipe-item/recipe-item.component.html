@@ -1,1 +1,14 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item"
+    (click)="onSelected()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h4>{{ recipe.name }}</h4>
+                <p>{{ recipe.description }}</p>
+            </div>
+            <div class="col-6">
+                <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</a>
